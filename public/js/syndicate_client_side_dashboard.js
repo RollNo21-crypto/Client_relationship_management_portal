@@ -80,9 +80,6 @@ function populateTable(clients) {
                   <img id="profile-img" src="${profileImage}" alt="Profile" class="profile-img cursor-pointer" style="width: 50px; height: 50px; border-radius: 50%;" onclick="openImagePopup('${profileImage}')">
               </td>
               <td class="py-2 px-4">${client.name || 'N/A'}</td>
-              <td class="py-2 px-4">${client.email || 'N/A'}</td>
-              <td class="py-2 px-4">${client.phone || 'N/A'}</td>
-              <td class="py-2 px-4">${client.syndicate_name || 'N/A'}</td>
               <td class="py-2 px-4">${new Date(client.createdAt).toLocaleString()}</td>
               <td class="py-2 px-4">
                   <button class="bg-blue-500 px-2 py-1 rounded" onclick="handleViewClient('${client._id}')">View</button>
